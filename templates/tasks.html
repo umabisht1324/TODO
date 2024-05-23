@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block content %}
+<aside class="sidebar">
+    <div class="sidebar-header">
+        <img src="../static/images/tod.png" alt="logo">
+        <h2>TODO</h2>
+    </div>
+    <ul class="sidebar-links">
+        <h4><span>Main Menu</span></h4>
+        <li id="create-task-link">
+            <a href="#"><span class="material-symbols-outlined">
+                space_dashboard
+                </span>Create</a>
+        </li>
+        <li>
+            <a href="#"><span class="material-symbols-outlined">
+                space_dashboard
+                </span>Completed Tasks</a>
+        </li>
+        <li>
+            <a href="#"><span class="material-symbols-outlined">
+                space_dashboard
+                </span>Completed Tasks</a>
+        </li>
+        <li>
+            <a href="#"><span class="material-symbols-outlined">
+                space_dashboard
+                </span>In Progress Tasks</a>
+        </li>
+        <li>
+            <a href="#"><span class="material-symbols-outlined">
+                space_dashboard
+                </span>Priority Tasks</a>
+        </li>
+        <li>
+            <a href="#"><span class="material-symbols-outlined">
+                space_dashboard
+                </span>Scheduled Tasks</a>
+        </li>
+        <li>
+            <a href="#"><span class="material-symbols-outlined">
+                space_dashboard
+                </span>Overdue Tasks</a>
+        </li>
+        <li>
+            <a href="#"><span class="material-symbols-outlined">
+                space_dashboard
+                </span>Assigned Tasks</a>
+        </li>
+        <li>
+            <a href="#"><span class="material-symbols-outlined">
+                space_dashboard
+                </span>Personal Tasks</a>
+        </li>
+        <li>
+            <a href="#"><span class="material-symbols-outlined">
+                space_dashboard
+                </span>Team Tasks</a>
+        </li>
+        <li>
+            <a href="#"><span class="material-symbols-outlined">
+                space_dashboard
+                </span>Custom Categories</a>
+        </li>
+    </ul>
+</aside>
+<div style="border: 2px solid black; position: fixed;top: 250px;left: 530px;height: 400px;width: 800px;visibility: hidden;">
+    <div id="task-container"></div>
+</div>
+
+{% endblock %}

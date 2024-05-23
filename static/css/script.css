@@ -1,0 +1,26 @@
+/* Custom CSS */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    z-index: 999;
+    background: #333;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#sidebarCollapse {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#content {
+    margin-left: 250px; /* Adjust margin to accommodate sidebar width */
+}
